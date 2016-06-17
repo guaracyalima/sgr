@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recuperar senha</title>
+
+	<link rel="stylesheet" type="text/css" href="css/foundation.css">
+	<link rel="stylesheet" type="text/css" href="css/foundation.min.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body>
+
+<div class="row">
+
+	<div class="medium-6 medium-centered large-4 large-centered columns">
+	<br>
+
+	<form name="form1" method="POST" action="gerar_nova_senha.php">
+
+			<div class="row colum log-in-form">
+			<h4 class="text-center">Informe o email cadastrado</h4>
+			<span class="input-group-label fi-mail">$</span>
+			<input name="email" type="text" id="email">
+
+			<input name="recupera" type="hidden" id="recupera" value="recupera">
+
+			<input type="submit" name="Submit" value="Gerar nova senha" class="button expanded">
+
+		</div>		
+	</form>
+
+	</div>
+	</div>
+</body>
+</html>

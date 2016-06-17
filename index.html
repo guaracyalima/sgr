@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>Reservas</title>
+
+	<link rel="stylesheet" type="text/css" href="css/foundation.css">
+	<link rel="stylesheet" type="text/css" href="css/foundation.min.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<link rel="icon" type="image/png" href="/img/favicon.ico" />
+
+
+
+<script type="text/javascript">
+					function time()
+					{
+					today=new Date();
+					h=today.getHours();
+					m=today.getMinutes();
+					s=today.getSeconds();
+					document.getElementById('txt').innerHTML= " "+h+" : "+ m +" : "+ s;
+					setTimeout('time()',500);
+					}
+				</script>
+</head>
+<body onload="time()">
+	<div class="row">
+
+		<div class="small-4 medium-4 large-4 columns">
+			<img src="img/if.jpg">
+				<br />
+				
+					<script language="JavaScript">
+
+						document.write("<font color='#000000' size='3' face='arial'>")
+						var mydate=new Date()
+						var year=mydate.getYear()
+						if (year<2000)
+						year += (year < 1900) ? 1900 : 0
+						var day=mydate.getDay()
+						var month=mydate.getMonth()
+						var daym=mydate.getDate()
+						if (daym<10)
+						daym="0"+daym
+						var dayarray=new Array("Domingo","Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sábado")
+						var montharray=new Array(" de Janeiro de "," de Fevereiro de "," de Março de ","de Abril de ","de Maio de ","de Junho de","de Julho de ","de Agosto de ","de Setembro de "," de Outubro de "," de Novembro de "," de Dezembro de ")
+						document.write("   "+dayarray[day]+", "+daym+" "+montharray[month]+ " "+year+" ")
+						document.write("</b></i></font>")
+					</script>
+						<div id="txt"></div>
+
+							<div class="small-3 medium-3 large-3">
+								<h4>Cardapio</h4>
+									<ul>
+										<li>Feijão</li>
+										<li>Farinha</li>
+										<li>Farofa</li>
+									</ul>
+							</div>
+
+
+		</div>
+			<div class="small-8 medium-8 large-8 columns">
+				<h1>Acesso ao refeitorio</h1>
+					<form action="verifica_aluno.php" method="POST" name="" id="">
+						<label>Matricula
+							<input name="matricula" type="text" id="matricula" placeholder="Ex: 12L08532">
+						</label>	
+
+
+								
+						<button name="reservar" value="Reservar" id="reservar" class="success button">Reservar</button>
+
+
+
+					</form>
+			</div>	
+		</div>
+
+	<script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>		
+
+</body>
+</html>

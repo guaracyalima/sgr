@@ -51,33 +51,35 @@
 					</script>
 						<div id="txt"></div>
 
-							<div class=" cardapio">
-								<h4 class="text-center">Cardapio</h4>
+							<div class="cardapio">
+								<h4 class="text-center tituloCardapio">Cardápio</h4>
 									<ul>
 										<li>Feijão</li>
 										<li>Farinha</li>
 										<li>Farofa</li>
 									</ul>
 
-									<p class="text-center"><a href="#">cardapio da semana</a></p>
+									<p class="text-center"><a href="#">cardápio da semana</a></p>
 							</div>
 
 
 		</div>
 			<div class="small-9 medium-9 large-9 columns">
-				<h1>Acesso ao refeitorio</h1>
+				<h1 id="acesso">Acesso ao refeitório</h1>
+				<div id="verde">
 					<form action="verifica_aluno.php" method="POST" name="" id="">
-						<label>Matricula
-							<input name="matricula" type="text" id="matricula" placeholder="Ex: 12L08532">
+						<label class="matricula">Matrícula
+							<input class="input" name="matricula" type="text" id="matricula" placeholder="Ex: 12L08532">
 						</label>	
 
 
 								
-						<button name="reservar" value="Reservar" id="reservar" class="success button">Reservar</button>
+						<button name="reservar" value="Reservar" id="reservar" class="alert button expanded">Reservar</button>
 
 
 
 					</form>
+				</div>	
 			</div>	
 		</div>
 

@@ -1,27 +1,41 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html"; charset="UTF-8" >
 	<title>Recargas</title>
+	<link rel="stylesheet" type="text/css" href="css/foundation.css">
+	<link rel="stylesheet" type="text/css" href="css/foundation.min.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<link rel="icon" type="image/png" href="/img/favicon.ico" />
 </head>
 <body>
+<div class="row">
 
-	<h1>Recarga de creditos</h1>
-		<form action="recarega.php" method="POST" name="" id="">
-			<label>Matricula</label>	
-				<input name="matricula" type="text" id="matricula">
-			
-			<label>Valor</label>	
-				<input name="valor" type="text" id="valor" >
+	<div class="medium-6 medium-centered large-4 large-centered columns">
+	<br>
 
-			<label>Aluno</label>	
-				<input type="radio" id="tipo" name="aluno">
+	<h1 id="cabecalhosMenores" class="text-center">Recarga de creditos</h1>
 
-			<label>Servidor</label>	
-				<input type="radio" id="tipo" name="servidor">	
+		<form action="recarega.php" method="POST" name="form1" id="form1">
 
-					<input type="submit" name="recaregar" value="Recaregar" id="recaregar">
+			<div class="row colum log-in-form">
 
+				<label class="labels">Matricula</label>	
+					<input class="inputCadastros" name="matricula" type="text" id="matricula">
+				
+				<label class="labels">Valor</label>	
+					<input class="inputCadastros" name="valor" type="text" id="valor" >
 
+				<label class="labels">Aluno</label>	
+					<input class="inputCadastros" type="radio" id="tipo" name="aluno">
+
+				<label class="labels">Servidor</label>	
+					<input class="inputCadastros" type="radio" id="tipo" name="servidor">	
+
+						<input type="submit" name="recaregar" value="Recaregar" id="recaregar">
+
+					</div>	
 
 		</form>
+	</div>
+	</div>	
 
 </body>

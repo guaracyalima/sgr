@@ -1,20 +1,126 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300italic,300,100,100italic);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300,700);
+
 .log-in-form {
   border: 1px solid #cacaca;
   padding: 1rem;
   border-radius: 3px; }
 
+  #acesso{
+    text-align: center;
+    font-style: 'Ubuntu';
+    font-weight: 700;
+    font-size: 40px;
+    color: #000;
+    text-transform: uppercase;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+
   .preta{
   	background-color: #ccc;
   	height: 100%;
   	max-height: 120%;
+    height: 41.22em;
+
   }
 
   .cardapio{
   	background-color: #fff;
   	font-style: normal;
+  
   	
   }
 
+
+  .tituloCardapio{
+      font-family: 'Ubuntu';
+    font-weight: 300;
+  }
+
+
   .cardapio li{
   	list-style: none;
+  }
+
+  #frm{
+    
+
+  }
+
+  #verde{
+    background-color: #9dea9c;
+    border-radius: 1em;
+  }
+
+  .matricula{
+    
+    font-size: 30px;
+    font-family: 'Ubuntu' ;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  #txt{
+   font-size: 40px;
+    font-family: 'Ubuntu' ;
+    font-weight: 700; 
+    text-align: center;
+
+  }
+
+  .input{
+    padding: 2.5rem;
+    font-size: 50px;
+    border-radius: 1em;
+
+  }
+
+  .inputOther{
+    padding: 1rem;
+    font-size: 20px;
+    border-radius: 1em;
+  }
+
+  .expanded{
+    border-radius: 0.5rem;
+    
+  }
+
+  .button.alert{
+    font-style: 'Ubuntu';    
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  .labels{
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    color: #000;
+  }
+
+  .button.expanded{
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+  }
+
+  .inputCadastros{
+    padding: 1rem;
+    font-size: 15px;
+    border-radius: 1em;
+  }
+
+  #cabecalhosMenores{
+    text-align: center;
+    font-style: 'Ubuntu';
+    font-weight: 700;
+    font-size: 20px;
+    color: #000;
+    text-transform: uppercase;
+    
   }

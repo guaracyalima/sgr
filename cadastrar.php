@@ -101,20 +101,20 @@
 						
 						$headers = "MIME-Version: 1.0\n";
 						$headers .="Content-type: text/html; charset=iso-8859-1\n";
-						$headers .="FROM: http://guabirabadev.com.br - <help@guabirabadev.com.br>";
+						$headers .="FROM: http://ifpi.edu.br - <help@guabirabadev.com.br>";
 
 						$subject = "Confirmação de cadastro - guabirabadev.com.br";
 						$mensagem = "Prezado {$nome} {$sobrenome},<br />
-						Obrigado pelo seu cadastro em nosso site, <a href='http://www.teusite.com.br'>
-						http://www.teusite.com.br</a>!<br /> <br />
+						Obrigado pelo seu cadastro em nosso site, <a href='http://www.ifpi.edu.br'>
+						http://www.ifpi.edu.br</a>!<br /> <br />
 
 						Para confirmar seu cadastro e ativar sua conta em nosso site, podendo acessar à
 						áreas exclusivas, por favor clique no link abaixo ou copie e cole na barra de
 						endereço do seu navegador.<br /> <br />
 
-						<a href='http://www.teusite.com.br/ativar.php?id={$usuario_id}&code={$senha}'>
+						<a href='http://ifpi.edu.br/ativar.php?id={$usuario_id}&code={$senha}'>
 
-						http://www.teusite.com.br/ativar.php?id={$usuario_id}&code={$senha}
+						http://www.ifpi.edu.br/ativar.php?id={$usuario_id}&code={$senha}
 
 						</a>
 

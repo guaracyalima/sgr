@@ -124,3 +124,21 @@
     text-transform: uppercase;
     
   }
+
+  #btnCardapioAdd{
+    background-color: #000;
+    font-family: 'Ubuntu';
+    font-style: inherit;
+    color: red;
+    font-weight: 400;
+
+  }
+
+  #btnCardapioRemove{
+    background-color: red;
+    font-family: 'Ubuntu';
+    font-style: inherit;
+    color: black;
+    font-weight: 400;
+
+  }

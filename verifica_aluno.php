@@ -14,7 +14,7 @@
 
                 }else{
                     setcookie("matricula",$matricula);
-                    header("Location:reserva_ok.html");                    
+                    header("Location:reserva_ok.php");                    
                 }
 
              

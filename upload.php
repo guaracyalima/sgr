@@ -3,7 +3,7 @@
  include_once('config.php');
 
  // Abre o Arquvio no Modo r (para leitura)
- $arquivo = fopen ('file.csv', 'r');
+ $arquivo = fopen ('COTAHISTA1986.csv', 'r');
 
  // Lê o conteúdo do arquivo
  while(!feof($arquivo))

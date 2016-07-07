@@ -1,3 +1,4 @@
+<?php include 'functions.php' ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,5 +13,12 @@
 <body>
 <h1 class="text-center">Reservado com sucesso!</h1>
 
+	
+	<?php 
+		get_criaComprovanteDeReserva();
+	 ?>
+
+
+	
 </body>
 </html>

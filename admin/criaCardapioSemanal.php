@@ -1,6 +1,6 @@
 <?php 
 
-include '../config.php';
+include 'config.php';
 
 	$ingrediente1 = trim($_POST['ingrediente1']);
 	$ingrediente2 = trim($_POST['ingrediente2']);

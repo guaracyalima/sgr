@@ -142,3 +142,14 @@
     font-weight: 400;
 
   }
+
+  .acdTitulo{
+    font-size: 20px;
+  }
+
+  #acao_cardapio{
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #8af;
+  }

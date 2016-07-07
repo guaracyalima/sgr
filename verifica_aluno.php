@@ -18,12 +18,11 @@
                 }
 
              
+
             	function instanciaReservanoDb(){
+			
 				$sql = mysql_query(
-				"INSERT INTO reservas
-				 (data_reserva, matricula, )
-			 	VALUES 
-			 	(now(), '{$matricula}')")or die( mysql_error());
+				"INSERT INTO reservas (data_reserva, matricula, ) VALUES (now(), '{$matricula}')")or die( mysql_error());
 
 					if (!$sql) {
 						echo "Erro ao instanciar reservas";

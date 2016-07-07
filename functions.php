@@ -6,4 +6,9 @@
 		}
 	}
 
+
+
+	function get_criaComprovanteDeReserva(){
+		$sql = mysql_query("SELECT * FROM reserva ORDER BY id LIMIT 1");
+	}
  ?>

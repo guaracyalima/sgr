@@ -1,6 +1,6 @@
 <?php
  // inclui a conexão
- include_once('config.php');
+ include_once('/admin/config.php');
 
  // Abre o Arquvio no Modo r (para leitura)
  $arquivo = fopen ('COTAHISTA1986.csv', 'r');

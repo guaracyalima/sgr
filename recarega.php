@@ -1,5 +1,5 @@
 <?php 
-include 'config.php';
+include '/admin/config.php';
 
 	$matricula = trim($_POST['matricula']);
 	$valor = trim($_POST['valor']);

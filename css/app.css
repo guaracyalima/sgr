@@ -153,3 +153,29 @@
     text-transform: uppercase;
     color: #8af;
   }
+
+  .dataCardapio{
+    font-size: 16px;
+    font-style: all;
+    font-family: 'Ubuntu';
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .itemCardapio{
+    font-size: 14px;
+    font-style: all;
+    font-family: 'Ubuntu';    
+    color: #03f;
+  }
+
+  .itemCardapio li{
+    list-style: none;
+  }
+
+  .cardapioSemanalUL ul{
+    list-style: none;
+    display: inline;
+    background: #000;
+  }

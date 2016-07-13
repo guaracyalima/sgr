@@ -86,6 +86,7 @@
   <li class="itemCardapio"><?php echo $ingrediente4; ?></li>
   <li class="itemCardapio"><?php echo $ingrediente5; ?></li>
   <li class="itemCardapio"><?php echo $ingrediente6; ?></li>
+  <li class="infoDoCardapio"><?php echo $info; ?></li>
   ----------------------------
 
   
@@ -163,14 +164,12 @@
 			
 ?>
 
-
 <table>
   <thead>
     <tr>
-      <th>ID</th>
-      <th>MATRICULA</th>
-      <th>NOME</th>
-      
+      <th>Id</th>
+      <th>Matricula</th>
+      <th>Data</th>      
     </tr>
   </thead>
   <tbody>
@@ -189,26 +188,3 @@
 }
 ?>
 
-<!--/*********************************************************************************************************/-->
-
-<?php 
-	
-	function set_reserva(){
-
-
-
-	$matricula = trim($_POST['matricula']);
-	
-
-	$sql = mysql_query(
-			"INSERT INTO reserva
-			 (matricula, data)
-			 	VALUES 
-			 	('$matricula', now())")or die( mysql_error());
-
-				echo "Reserva efetuada com sucesso!";
-			if (!$sql) {
-					echo "Erro ao reservar almoço. Tente novamente mais tarde ou contate o administrador do sistema.";
-				}
-}
-?>

@@ -33,7 +33,7 @@
 
 						header("Location: area_restrita.php");
 
-					} else{
+					}else{
 						echo "Erro ao logar! usuario ou senha não localizados.";
 						include 'formulario_login.html';
 					}

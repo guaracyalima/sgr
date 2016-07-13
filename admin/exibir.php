@@ -10,17 +10,27 @@
 	<link rel="stylesheet" type="text/css" href="../css/foundation.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/app.css">
 	<link rel="icon" type="image/png" href="../img/favicon.ico"/>
+	<!--<link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">-->
 	
 </head>
 <body>
 
+	<?php include 'menuAdmin.php'; ?>
+
 	<div class="row">
 		<div class="small-12 medium-12 large-12 columns ">
 
-		<a href="gerenciarAlunos.php">Gerenciar alunos</a>
-		<a href="gerenciarReservas.php">Gerenciar Reservas</a>
+			
+
+		
 </div>
 	</div>
+
+
+
+
+
+
 	
 </body>
 

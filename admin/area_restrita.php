@@ -1,9 +1,9 @@
 <?php 
 	session_start();
-	include 'functions.php';
+	include '../functions.php';
 	session_checker();
 
-	echo "Bem vindo <strong>". $_SESSION['nome'] ." ". $_SESSION['sobrenome'] . "</strong>"
+	echo "Bem vindo <strong>". $_SESSION['nome'] ." ". $_SESSION['sobrenome'] . "</strong>";
 
 	echo "O seu nivel de usuario é <strong>". $_SESSION['nivel_usuario']."</strong>";
 

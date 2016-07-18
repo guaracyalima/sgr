@@ -4,6 +4,7 @@
 
 	$matricula = $_POST['matricula'];
     $reservar = $_POST['reservar'];
+    
         if (isset($reservar)) {
                      
             $verifica = mysql_query("SELECT * FROM alunos WHERE matricula = '$matricula'") or die("erro ao selecionar");
@@ -13,17 +14,20 @@
 
 
                 }else{
-
-                	$sql = mysql_query(
+                    $data = date("d-m-Y");
+            $sql = mysql_query(
 			"INSERT INTO reserva
 			 (matricula, data)
 			 	VALUES 
-			 	('$matricula', now())")or die( mysql_error());
+			 	('$matricula', '$data')")or die( mysql_error());
 
                 	
                 	
                     setcookie("matricula",$matricula);
-                    header("Location:reserva_ok.php");   
+                    header("Location:reserva_ok.php");
+
+                    
+                       
 
                 }
 

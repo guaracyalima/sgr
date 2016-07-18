@@ -7,13 +7,84 @@
 		}
 	}
 
+	?>
 
+<!-- 		##########  Função get comprovante   	############ -->
+
+
+<?php 
 
 	function get_criaComprovanteDeReserva(){
-		$sql = mysql_query("SELECT * FROM reserva ORDER BY id LIMIT 1");
-	}
+		
+		$sql = mysql_query("SELECT * FROM reserva order by id desc LIMIT 1");
+		$contar = mysql_num_rows($sql);
 
-	?>
+		if ($contar <='0'){
+		echo "<p>Aluno não encontrado. Tente novamente mais tarde ou contate o administrador do sistema!</p>";
+	}else {
+		while ($rs = mysql_fetch_array ($sql)){
+			$id = $rs['0'];
+			$matricula = $rs['1'];
+			$data = $rs['2'];
+			
+	
+	
+
+ ?>
+<tbody>
+    <tr>
+      <td><?php echo $id; ?></td>
+      <td><?php echo $matricula; ?></td>
+      <td><?php echo $data; ?></td>      
+    </tr>
+	
+
+   <?php
+   
+		}
+	}
+	
+	
+}
+?>
+
+ <!-- 		##########  Função get numero de reservas por dia   	############ -->
+
+<?php 
+
+	function getNumReservasDia(){
+		$data = date("d-m-Y");
+		$sql = mysql_query("SELECT * FROM reserva where data = '$data'");
+	
+		$contar = mysql_num_rows($sql);
+	
+	if ($contar <='0'){
+		echo "<p>Lista de reservas não encontrada. Tente novamente mais tarde ou contate o administrador do sistema!</p>";
+	}else {
+		while ($rs = mysql_fetch_array ($sql)){
+			$id = $rs['0'];
+			$matricula = $rs['1'];
+			$data = $rs['2'];
+			
+?>
+	
+	<tbody>
+    <tr>
+      <td><?php echo $id; ?></td>
+      <td><?php echo $matricula; ?></td>
+      <td><?php echo $data; ?></td>      
+    </tr>
+	
+
+   <?php
+   
+		}
+	}
+	echo "Total de inscritos ".$contar;
+}
+?>
+	
+ <!--############################################################################################### -->
 
 <?php 
 	

@@ -37,7 +37,7 @@ if (isset($_GET["txtnome"])) {
         // Captura os dados da consulta e inseri na tabela HTML
         while ($linha = mysql_fetch_array($result)) {
             $return.= "<td>" . utf8_encode($linha["id"]) . "</td>";
-            $return.= "<td>" . "<a href=''>" .utf8_encode($linha["matricula"]) ."</a>". "</td>";
+            $return.= "<td>" . "<a href='#'>" .utf8_encode($linha["matricula"]) ."</a>". "</td>";
             $return.= "<td>" . utf8_encode($linha["nome"]) . "</td>";
             $return.= "<td>" . utf8_encode($linha["saldo"]) . "</td>";
             $return.= "</tr>";

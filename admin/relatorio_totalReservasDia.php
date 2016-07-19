@@ -20,7 +20,7 @@
 
 	<div class="row">
 		<div class="small-12 medium-12 large-12 columns ">
-			
+
 
 			<table>
   <thead>
@@ -36,8 +36,11 @@
 			 ?>
 
 			 </tbody>
-</table>
-
+</table>	
+			<a href="exibir.php">Voltar</a>	
+			
+			<input type="button" name="imprimir" value="Imprimir" onclick="window.print();">
+		
 		</div>
 	</div>
 	

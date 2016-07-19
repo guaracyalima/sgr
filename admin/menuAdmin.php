@@ -28,6 +28,8 @@
         <li><a href="gerenciarAlunos.php">Alunos</a></li>
         <li><a href="gerenciarReservas.php">Reservas</a></li>
         <li><a href="usuarios.php">Usuarios</a></li>
+        <li><a href="relatorio_totalReservasDia.php">Nutricionista</a></li>
+        <li><a href="../modules/estoque/index.html">Almoxarifado</a></li>
       </ul>
     </div>
     <div class="top-bar-right">

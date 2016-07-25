@@ -1,6 +1,6 @@
 <?php 
 	
-include '../config.php';
+include 'config.php';
 include '../scripts.php';
 
 	if (isset($_POST['excluir_cardapio']) && $_POST['excluir_cardapio'] == 'excluir') {
@@ -120,7 +120,9 @@ include '../scripts.php';
 			    
 			  </tbody>
 			</table>
-
+<a href="exibir.php">Voltar</a>	
+			
+			<input type="button" name="imprimir" value="Imprimir" onclick="window.print();">
  		</div>
  		
  	</div>

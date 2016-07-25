@@ -20,16 +20,16 @@
 		<div class="small-12 medium-12 large-6 columns ">
 			<ul class="cardapioSemanalUL">
 				<?php 
-					get_cardapio_semanal();
-				 ?>
+				get_cardapio_semanal();
+				?>
 			</ul>	 
 		</div>
 	</div>		 
 
- <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>		
+	<script src="js/vendor/jquery.js"></script>
+	<script src="js/vendor/what-input.js"></script>
+	<script src="js/vendor/foundation.js"></script>
+	<script src="js/app.js"></script>		
 
 </body>
 </html>

@@ -23,29 +23,29 @@ if (isset($_GET["txtnome"])) {
     if ($cont > 0) {
         // Atribui o código HTML para montar uma tabela
         $tabela = "<table border='1'>
-                    <thead>
-                        <tr>
-                            <th>id</th>
-                            <th>matricula</th>
-                            <th>nome</th>
-                            <th>saldo</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    <tr>";
-        $return = "$tabela";
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>matricula</th>
+                <th>nome</th>
+                <th>saldo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>";
+                $return = "$tabela";
         // Captura os dados da consulta e inseri na tabela HTML
-        while ($linha = mysql_fetch_array($result)) {
-            $return.= "<td>" . utf8_encode($linha["id"]) . "</td>";
-            $return.= "<td>" . "<a href='#'>" .utf8_encode($linha["matricula"]) ."</a>". "</td>";
-            $return.= "<td>" . utf8_encode($linha["nome"]) . "</td>";
-            $return.= "<td>" . utf8_encode($linha["saldo"]) . "</td>";
-            $return.= "</tr>";
-        }
-        echo $return.="</tbody></table>";
-    } else {
+                while ($linha = mysql_fetch_array($result)) {
+                    $return.= "<td>" . utf8_encode($linha["id"]) . "</td>";
+                    $return.= "<td>" . "<a href='#'>" .utf8_encode($linha["matricula"]) ."</a>". "</td>";
+                    $return.= "<td>" . utf8_encode($linha["nome"]) . "</td>";
+                    $return.= "<td>" . utf8_encode($linha["saldo"]) . "</td>";
+                    $return.= "</tr>";
+                }
+                echo $return.="</tbody></table>";
+            } else {
         // Se a consulta não retornar nenhum valor, exibi mensagem para o usuário
-        echo "Aluno não encontrado";
-    }
-}
-?>
+                echo "Aluno não encontrado";
+            }
+        }
+        ?>

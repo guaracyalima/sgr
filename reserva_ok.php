@@ -12,31 +12,31 @@
 
 </head>
 <body>
-<h1 class="text-center">Reservado com sucesso!</h1>
+	<h1 class="text-center">Reservado com sucesso!</h1>
 
-		<div class="row">
+	<div class="row">
 		<div class="small-12 medium-12 large-12 columns ">
 			
 
 			<table>
-  <thead>
-    <tr>
-    <th>ID</th>
-      <th>MATRICULA</th>
-      <th>Data</th>
-      
-    </tr>
-  </thead>
-	<?php 
-		get_criaComprovanteDeReserva();
-	 ?>
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>MATRICULA</th>
+						<th>Data</th>
+						
+					</tr>
+				</thead>
+				<?php 
+				get_criaComprovanteDeReserva();
+				?>
 
 
-			 </tbody>
-</table>
+			</tbody>
+		</table>
 
-		</div>
 	</div>
-	
+</div>
+
 </body>
 </html>

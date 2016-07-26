@@ -19,7 +19,7 @@
       <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
         
       </span>
-      <strong>SGR</strong>
+      <strong> <a href="#">SGR</a></strong>
     </div>
     <div id="responsive-menu">
       <div class="top-bar-left">

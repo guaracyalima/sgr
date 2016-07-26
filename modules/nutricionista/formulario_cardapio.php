@@ -35,6 +35,7 @@
 </head>
 <body>
 
+<?php include '../../admin/menuAdmin.php'; ?>
 
 	<div class="row">
 		<div class="medium-6 medium-centered large-4 large-centered columns">
@@ -70,7 +71,7 @@
 						<textarea class="inputCadastros" name="info" placeholder="Ex: I am ROOT" id="info"><?php echo $info; ?></textarea>
 
 						<label class="labels">Data</label>	
-						<input type="text" name="calendario" id="calendario" placeholder="dia - mes - ano" value="<?php echo $calendario; ?>" />
+						<input type="text" class="inputCadastros" name="calendario" id="calendario" placeholder="dia - mes - ano" value="<?php echo $calendario; ?>" />
 
 
 						<input type="submit" name="submit" value="Cadastrar" class="button expanded"/>

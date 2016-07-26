@@ -4,9 +4,6 @@ include '/admin/config.php';
 $matricula = trim($_POST['matricula']);
 $valor = trim($_POST['valor']);
 $tipo = trim($_POST['tipo']);
-
-	//bloco de checagens
-
 if ((!$matricula) || (!$valor) || (!$tipo)) {
 	echo "Erro: ";
 
@@ -26,8 +23,6 @@ if ((!$matricula) || (!$valor) || (!$tipo)) {
 
 	include 'recargas.html';
 } else{
-		//Verificar se o usuario digitado ja foi escolhido
-
 	$sql_email_check = mysql_query(
 		"SELECT COUNT(matricula) FROM alunos WHERE matricula = '{$matricula}'");
 
@@ -41,9 +36,6 @@ if ((!$matricula) || (!$valor) || (!$tipo)) {
 	$usuario_check = $uReg[0];
 	
 }
-
-		//persistencia dos dados no DB
-
 $sql = mysql_query("UPDATE alunos SET saldo = '{$valor}' WHERE matricula = '{$matricula}' ")or die( mysql_error());
 
 if (!$sql) {

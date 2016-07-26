@@ -1,2 +1,8 @@
 # 
-sistema de gestão de refeitorio - SGR
+Sistema de Gestão de Refeitorio - SGR
+
+Arquitetur:
+	/admindb.html
+	/cardapioSemanal.php
+	/contato.php
+	/

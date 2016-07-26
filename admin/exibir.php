@@ -18,12 +18,13 @@
 	<?php include 'menuAdmin.php'; ?>
 
 	<div class="row">
-		<div class="small-12 medium-12 large-12 columns ">
+		<div class="small-12 medium-12 large-12 columns centered">
 
-			
+		<h1 id="acesso">Sistema de Gestão de Acesso ao Refeitorio - SGR</h1>
+			<img src="../img/if.jpg" id="imgExibir">	
 
-		
-</div>
+
+		</div>
 	</div>
 
 

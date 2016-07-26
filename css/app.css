@@ -253,3 +253,8 @@
 .linkVoltar{
   
 }
+#imgExibir{
+  alignment-baseline: central;
+  padding-top: 3em;
+  padding-left: 30em;
+}

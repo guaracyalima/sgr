@@ -33,6 +33,19 @@ include 'application/controler/DB.php';
 
 
 <title>ALMOXARIFADO</title>
+
+
+	<meta http-equiv="Content-Type" content="text/html">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+
+
+	<link rel="stylesheet" type="text/css" href="../../css/foundation.css">
+	<link rel="stylesheet" type="text/css" href="../../css/foundation.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/app.css">
+	<link rel="icon" type="image/png" href="../../img/favicon.ico" />
+
+
 <style type="text/css">
 @import url("styles/index.css");
 @import url("styles/menu.css");
@@ -54,10 +67,11 @@ include 'application/controler/DB.php';
 
 <body>
 
-
-
+<div class="row">
+<div class="small-12 medium-12 large-12 columns">
 
 <div id="Full">
+<h1>controle de estoque</h1>
 <div id="Logo"><big><b>CONTROLE DE ESTOQUE</b></big>
 <img src="img/logo-kanui.png" alt="Kanui" width="150" height="40" align="left"> <!-- LOGO KANUI -->
 <img src="img/logo-tricae.png" alt="Kanui" width="150" height="40" align="right"> <!-- LOGO TRICAE -->
@@ -122,7 +136,8 @@ include 'application/controler/DB.php';
   <div id="Content"><?php include 'application/view/'.$url.'.phtml'; ?></div>
 </div>
 
-
+</div>
+</div>
 </body>
 
 </html>

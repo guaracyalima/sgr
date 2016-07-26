@@ -10,12 +10,13 @@ if (isset($_POST['excluir_cardapio']) && $_POST['excluir_cardapio'] == 'excluir'
 
 	if ($deletar_cardapio >= 1) {
 		echo "Deletado com sucesso!";
-	}
-} else{
+	}else{
 	
 	echo "Erro ao deletar cardapio";
 	
 }
+	
+} 
 
 
 ?>
@@ -120,7 +121,7 @@ if (isset($_POST['excluir_cardapio']) && $_POST['excluir_cardapio'] == 'excluir'
 					
 				</tbody>
 			</table>
-			<a href="exibir.php">Voltar</a>	
+			<a href="../../admin/exibir.php">Voltar</a>	
 			
 			<input type="button" name="imprimir" value="Imprimir" onclick="window.print();">
 		</div>

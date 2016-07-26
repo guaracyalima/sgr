@@ -8,10 +8,6 @@ function session_checker(){
 }
 
 ?>
-
-<!-- 		##########  Função get comprovante   	############ -->
-
-
 <?php 
 
 function get_criaComprovanteDeReserva(){
@@ -32,20 +28,12 @@ function get_criaComprovanteDeReserva(){
 					<td><?php echo $id; ?></td>
 					<td><?php echo $matricula; ?></td>
 					<td><?php echo $data; ?></td>      
-				</tr>
-				
-
-				<?php
-				
+				</tr>				
+				<?php				
 			}
 		}
 		
-		
-
 	}?>
-
-	<!-- 		##########  Função get numero de reservas por dia   	############ -->
-
 	<?php 
 
 	function getNumReservasDia(){
@@ -79,16 +67,11 @@ function get_criaComprovanteDeReserva(){
 			echo "Total de inscritos ".$contar;
 		}
 		?>
-		
-		<!--############################################################################################### -->
-
 		<?php 
 		
 		function get_cardapio(){
-			$sql = mysql_query("SELECT * FROM cardapio LIMIT 1");
-			
+			$sql = mysql_query("SELECT * FROM cardapio ORDER BY data DESC LIMIT 1");		
 			$contar = mysql_num_rows($sql);
-			
 			if ($contar <='0'){
 				echo "<p>Cardapio do dia ainda não foi criado. Tente novamente mais tarde!</p>";
 			}else {
@@ -103,8 +86,6 @@ function get_criaComprovanteDeReserva(){
 					$data = $rs['7'];
 					$info = $rs['8'];
 					?>
-
-					
 					<li><?php echo $ingrediente1; ?></li>
 					<li><?php echo $ingrediente2; ?></li>
 					<li><?php echo $ingrediente3; ?></li>
@@ -112,25 +93,16 @@ function get_criaComprovanteDeReserva(){
 					<li><?php echo $ingrediente5; ?></li>
 					<li><?php echo $ingrediente6; ?></li>
 					<li>Data: <?php echo $data; ?></li>
-					
-					
-
-
 					<?php
 				}
 			}
 		}
 		?>
-
-		<!--/*********************************************************************************************************/-->
-
 		<?php 
 		
 		function get_cardapio_semanal(){
-			$sql = mysql_query("SELECT * FROM cardapio ORDER BY data");
-			
-			$contar = mysql_num_rows($sql);
-			
+			$sql = mysql_query("SELECT * FROM cardapio ORDER BY data DESC LIMIT 7");			
+			$contar = mysql_num_rows($sql);			
 			if ($contar <='0'){
 				echo "<p>Cardapio do dia ainda não foi criado. Tente novamente mais tarde!</p>";
 			}else {
@@ -144,37 +116,30 @@ function get_criaComprovanteDeReserva(){
 					$ingrediente6 = $rs['6'];
 					$data = $rs['7'];
 					$info = $rs['8'];
-					?>
-
-					<li class="dataCardapio">Data: <?php echo $data; ?></li>
-					<li class="itemCardapio"><?php echo $ingrediente1; ?></li>
-					<li class="itemCardapio"><?php echo $ingrediente2; ?></li>
-					<li class="itemCardapio"><?php echo $ingrediente3; ?></li>
-					<li class="itemCardapio"><?php echo $ingrediente4; ?></li>
-					<li class="itemCardapio"><?php echo $ingrediente5; ?></li>
-					<li class="itemCardapio"><?php echo $ingrediente6; ?></li>
-					<li class="infoDoCardapio"><?php echo $info; ?></li>
-					----------------------------
-
-					
-					
-
-
+					?>					
+					<tr>
+						<td><?php echo $id; ?>  </td>
+						<td><?php echo $ingrediente1; ?></td>
+						<td><?php echo $ingrediente2; ?></td>
+						<td><?php echo $ingrediente3; ?></td>
+						<td><?php echo $ingrediente4; ?></td>
+						<td><?php echo $ingrediente5; ?></td>
+						<td><?php echo $ingrediente6; ?></td>
+						<td><?php echo $data; ?></td>  
+						<td><?php echo $info; ?>  </td>
+					</tr>
 					<?php
 				}
 			}
 		}
 		?>
-
-		<!--/*********************************************************************************************************/-->
-
 		<?php 
-		
+
 		function lista_alunos_matriculados(){
 			$sql = mysql_query("SELECT * FROM alunos ORDER BY id");
-			
+
 			$contar = mysql_num_rows($sql);
-			
+
 			if ($contar <='0'){
 				echo "<p>Sem alunos cadastrados. Tente novamente mais tarde ou contate o administrador do sistema.</p>";
 			}else {
@@ -182,34 +147,25 @@ function get_criaComprovanteDeReserva(){
 					$id = $rs['0'];
 					$matricula = $rs['1'];
 					$nome = $rs['2'];
-					
+
 					?>
-
-
 					<tr>
 						<td><?php echo $id; ?></td>
 						<td><?php echo $matricula; ?></td>
 						<td><?php echo $nome; ?></td>      
 					</tr>
-					
-
-
 					<?php
 				}
 			}
 		}
 		?>
-
-
-		<!--/*********************************************************************************************************/-->
-
 		<?php 
-		
+
 		function get_reservas(){
 			$sql = mysql_query("SELECT * FROM reserva ORDER BY data");
-			
+
 			$contar = mysql_num_rows($sql);
-			
+
 			if ($contar <='0'){
 				echo "<p>Sem reservas cadastrados. Tente novamente mais tarde ou contate o administrador do sistema.</p>";
 			}else {
@@ -217,46 +173,37 @@ function get_criaComprovanteDeReserva(){
 					$id = $rs['0'];
 					$matricula = $rs['1'];
 					$data = $rs['2'];
-					
+
 					?>
 
 					<tr>
 						<td><?php echo $id; ?></td>
 						<td><?php echo $matricula; ?></td>
 						<td><?php echo $data; ?></td>      
-						
-
-
 						<?php
 					}
 				}
 			}
 			?>
 
-			<!-- ###############################  	GERENCIAR USUARIOS		#############################-->
-
 			<?php 
 			function get_listarUsuarios(){
 				$sql = mysql_query("SELECT * FROM usuarios");
 				$contar = mysql_num_rows($sql);
-				
+
 				if ($contar <='0'){
 					echo "<p>Sem usuarios cadastrados. Tente novamente mais tarde ou contate o administrador do sistema.</p>";
 				}else {
 					while ($rs = mysql_fetch_array ($sql)){
 						$id = $rs['0'];
 						$login = $rs['1'];
-						
-						
+
+
 						?>
 
 						<tr>
 							<td><?php echo $id; ?></td>
 							<td><?php echo $login; ?></td>
-							
-							
-
-
 							<?php
 						}
 					}

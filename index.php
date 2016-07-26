@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/foundation.css">
 	<link rel="stylesheet" type="text/css" href="css/foundation.min.css">
 	<link rel="stylesheet" type="text/css" href="css/app.css">
-	<link rel="icon" type="image/png" href="/img/favicon.ico" />
+	<link rel="icon" type="image/png" href="img/favicon.ico"/>
 	<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
 
 	<script type="text/javascript">
@@ -64,7 +64,7 @@
 		</div>
 		<div class="small-9 medium-9 large-9 columns">
 			<ul class="accordion" data-accordion data-allow-all-closed="true" id="Container">
-				<li class="accordion-item is-active" data-accordion-item>
+				<li class="accordion-item " data-accordion-item>
 					<a href="#" class="accordion-title acdTitulo">Nescessita de ajuda para descobrir a sua matricula?</a>
 					<div class="accordion-content" data-tab-content id="Pesquisar">
 						Infome o seu nome: 

@@ -258,3 +258,8 @@
   padding-top: 3em;
   padding-left: 30em;
 }
+
+#cancelaReserva{
+  text-align: right; 
+  padding-right: 13px; 
+}

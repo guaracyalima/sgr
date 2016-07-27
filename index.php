@@ -54,7 +54,7 @@
 				
 			</div>
 			<div class="cardapio">
-				<h4 class="text-center tituloCardapio">Cardápio</h4>
+				<h4 class="text-center tituloCardapio">Cardápio de hoje</h4>
 				<ul>
 					<?php get_cardapio(); ?>
 					
@@ -83,6 +83,8 @@
 						<input class="input" name="matricula" type="text" id="matricula" placeholder="Ex: 12L08532" autofocus>
 					</label>								
 					<button name="reservar"  value="Reservar" id="reservar" class="alert button expanded">Reservar</button>
+
+					<h6 id="cancelaReserva"><a href="modules/alunos/cancelar_reserva.php">Deseja cancelar a reserva?</a></h6>
 				</form>
 			</div>	
 		</div>	

@@ -48,7 +48,18 @@
             </ul>
           </li>
 
+
+          <li class="is-dropdown-submenu-parent">
+            <a href="#">Alunos</a>
+            <ul class="menu">
+              <li><a href="../modules/alunos/relatorioVisitantes.php">Visitantes</a></li>
+              
+              <!-- ... -->
+            </ul>
+          </li>
+
           <li><a href="../modules/estoque/index.html">Almoxarifado</a></li>
+          <li><a href="admindb.php">DB</a></li>
           
         </ul>
       </div>

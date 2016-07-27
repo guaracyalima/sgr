@@ -92,7 +92,7 @@ function get_criaComprovanteDeReserva(){
 					<li><?php echo $ingrediente4; ?></li>
 					<li><?php echo $ingrediente5; ?></li>
 					<li><?php echo $ingrediente6; ?></li>
-					<li>Data: <?php echo $data; ?></li>
+					
 					<?php
 				}
 			}
@@ -209,3 +209,48 @@ function get_criaComprovanteDeReserva(){
 					}
 				}
 				?>
+
+
+				<?php 
+				function get_relatorioVisitantes(){
+					$sql = mysql_query("SELECT * FROM alunos WHERE tipo = 'visitante'");
+					$contar = mysql_num_rows($sql);
+
+					if ($contar <='0'){
+						echo "<p>Sem usuarios cadastrados. Tente novamente mais tarde ou contate o administrador do sistema.</p>";
+					}else {
+						while ($rs = mysql_fetch_array ($sql)){
+
+							$matricula = $rs['0'];
+							$nome = $rs['1'];
+							$sobrenome = $rs['2'];
+							$email = $rs['3'];
+							$telefone = $rs['4'];
+							$campus = $rs['5'];
+							$cidade = $rs['6'];
+							$cpf = $rs['7'];
+							$info = $rs['8'];
+							$data = $rs['9'];
+							$tipo = $rs['10'];
+							?>
+
+							<tr>
+								<td><?php echo $matricula; ?></td>
+								<td><?php echo $nome; ?></td>
+								<td><?php echo $sobrenome; ?></td>
+								<td><?php echo $email; ?></td>
+								<td><?php echo $telefone; ?></td>
+								<td><?php echo $campus; ?></td>
+								<td><?php echo $cidade; ?></td>
+								<td><?php echo $cpf; ?></td>
+								<td><?php echo $info; ?></td>
+								<td><?php echo $data; ?></td>
+								<td><?php echo $tipo; ?></td>
+
+
+
+								<?php
+							}
+						}
+					}
+					?>
